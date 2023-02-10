@@ -1,0 +1,175 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+#container {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background: #f7f7f7;
+
+}
+
+#navbar {
+    height: 60px;
+    width: 100%;
+    position: absolute;
+    top: 20px;
+    left: 0px;
+}
+
+#navbar #logo {
+    height: 70px;
+    width: 140px;
+    position: absolute;
+    left: 3%;
+    top: -5px;
+}
+
+#navbar #logo img {
+    height: 70px;
+    width: 70px;
+    border-radius: 10px;
+   
+}
+
+#navbar ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    left: 20%;
+}
+
+#navbar ul:hover .active {
+    background: none;
+    border: none;
+}
+
+#navbar ul li {
+    height: 60px;
+    width: 140px;
+    margin: 0 auto;
+    display: grid;
+    place-items: center;
+    border-radius: 25px 0;
+    transition: 0.5s;
+
+}
+
+#navbar ul li:hover{
+    background: linear-gradient(to top, #64a5ad, #ffffff00);
+    border: 2px solid #98c3c8;
+}
+
+#navbar ul li a{
+    text-decoration: none;
+    color: #64a5ad;
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+#navbar ul li:hover a {
+    color: #207884;
+
+}
+
+#navbar ul .active {
+    background: linear-gradient(to top, #64a5ad, #ffffff00);
+    border: 2px solid #98c3c8;
+}
+
+#navbar ul .active a {
+    color: #207884;
+}
+
+#aSide {
+    height: 600px;
+    width: 600px;
+    position: absolute;
+    top: calc(50%-300px);
+    right: 7%;
+    margin-top: 150px;
+
+}
+
+#aSide img, model-viewer {
+    height: 600px;
+    width: 600px;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+#aSide img  {
+    border-radius: 100px;
+    box-shadow: 5px 10px 18px rgb(165, 10, 231);
+}
+
+#content {
+    height: 500px;
+    width: 500px;
+    position: absolute;
+    left: 12%;
+    top: calc(50%-250px);
+    margin-top: 220px;
+
+}
+
+#content h2 {
+    font-size: 100px;
+    color: #4c46f9;
+    font-weight: bold;
+}
+
+#content p {
+    font-size: 20px;
+}
+
+#content button {
+    height: 65px;
+    width: 200px;
+    border: 2px solid #000000;
+    outline: none;
+    font-size: 20px;
+    margin: 20px 0;
+    background: linear-gradient(to top, rgb(165, 10, 231), #c674fd00);
+    color: #000000;
+    border-radius:32px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 1s;
+    
+}
+
+#content button:hover {
+    background: none;
+    
+}
+
+#icons #iconsLogo {
+    height: 300px;
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+#icons #iconsLogo i{
+    height: 50px;
+    width: 50px;
+    font-size: 30px;
+    margin: 10px;
+    color: #207884;
+    place-items: center;
+    cursor: pointer;
+    margin-top: 300px;
+}
+
+#title{
+    font-size: 80px;
+    text-align: center;
+}
